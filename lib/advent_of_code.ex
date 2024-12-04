@@ -1,7 +1,8 @@
 defmodule AdventOfCode do
   @aoc_base_url "https://adventofcode.com"
 
-  def fetch_input(session, day) do
+  def fetch_input(day) do
+    session = "your_session_cookie"
     url = "#{@aoc_base_url}/2024/day/#{day}/input"
 
     headers = [

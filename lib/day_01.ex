@@ -1,8 +1,6 @@
 defmodule Day01 do
   def run() do
-    session = "your_session_cookie"
-
-    case AdventOfCode.fetch_input(1, session) do
+    case AdventOfCode.fetch_input(1) do
       {:ok, input} ->
         input
         |> parse_input()
